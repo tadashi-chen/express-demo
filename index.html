@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>express demo</title>
+	<script src="./js/jquery.min.js"></script>
+	<script>
+		function post() {
+			$.post({
+				url: '/ajax',
+				data: {
+					sendMsg: 'POST POST'
+				},
+				dataType: 'json',
+				// contentType: "application/json",
+				error: (req, err, e) => {
+					console.log('req', req);
+					console.log('err', err);
+					console.log('e', e);
+				},
+				success: (resp) => {
+					console.log(resp.msg);
+				}
+			});
+		}
+		function get() {
+			$.get({
+				url: '/ajax',
+				data: {
+					sendMsg: 'GET GET'
+				},
+				dataType: 'json',
+				error: (req, err, e) => {
+					console.log('req', req);
+					console.log('err', err);
+					console.log('e', e);
+				},
+				success: (resp) => {
+					console.log(resp.msg);
+				}
+			});
+		}
+	</script>
+</head>
+<body>
+<div><input type="button" name="" value="post" onclick="post()"></div>
+<div><input type="button" name="" value="get" onclick="get()"></div>
+</body>
+</html>
