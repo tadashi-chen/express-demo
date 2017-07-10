@@ -3,5 +3,5 @@
 ```shell
 $ cd express-demo
 $ npm install
-$ supervisor index.js
+$ supervisor --inspect index.js
 ```
