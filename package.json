@@ -1,21 +1,22 @@
 {
   "name": "express-demo",
   "version": "1.0.0",
-  "description": "",
+  "description": "实现基本的配置",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "supervisor --inspect index.js",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tadashi-chen/express-demo.git"
+    "url": "git+https://github.com/wscj/express-demo.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/tadashi-chen/express-demo/issues"
+    "url": "https://github.com/wscj/express-demo/issues"
   },
-  "homepage": "https://github.com/tadashi-chen/express-demo#readme",
+  "homepage": "https://github.com/wscj/express-demo#readme",
   "dependencies": {
     "body-parser": "^1.17.2",
     "express": "^4.15.3"
