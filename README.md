@@ -1,8 +1,15 @@
 # express-demo
 
 ```bash
-$ npm install -g supervisor
-$ cd express-demo
+# 安装项目依赖
 $ npm install
-$ supervisor --inspect index.js
+
+# 运行
+$ npm run dev
+
+# 安装调试工具
+$ npm install -g supervisor
+
+# 运行调试模式
+$ npm run start
 ```
